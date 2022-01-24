@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 69px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+.c0{
+    border: 4px solid rgb(65, 65, 221);
+}
+.font{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 3em;
+    background-color: red;
+    color: black;
+    border: 6px solid yellow;
+    box-sizing: border-box;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.image{
+    height: 300px;
+    background-color: violet;
+    background-image: url('index.png');
+    background-repeat: no-repeat;
+    background-size: 150px 180px;
+    background-position: center center;
+}
+.c1{
+    width: 1000px;
+    border: 3px solid purple;
+    margin: 10px auto;
+}
+.c1div{
+    border: 4px solid grey;
+    margin: 12px 4px;
+    padding: 12px 4px;
+    background-color: rgb(243, 229, 229);
+    box-shadow: 3px 3px 5px green;
+}
+#c11{
+    float: left;
+    width: 45%;
+}
+#c12{
+    float: left;
+    width: 45%;
+}
+#c13{
+    clear: left;
+}
+.c2{
+    border: 4px solid red;
+    padding: 30px;
+    background-color: rgb(233, 245, 233);
+    line-height: 25px;
+    width: 696px;
+    margin: auto;
+    box-shadow: 5px 5px 5px black;
+}
+a{
+    text-decoration: none;
+}
+/* a:visited{
+    background-color: rgb(31, 31, 216);
+    color: white;
+} */
+a:hover{
+    background-color: rgb(31, 31, 216);
+    color: white;
+}
+a:active{
+    background-color: black;
+    color: white;
+}
+.c2btn{
+    background-color: rgb(238, 87, 87);
+    padding: 5px;
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 4px;
+
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 0px 20px;
+}
+#search{
+    margin-left: 1000px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+.navbar li a:hover{
+    background-color: black;
+    color: white;
+}
+.navbar li a{
+    background-color: black;
+    color: white;
+}
+.c3{
+    margin: 10px 0px;
+    border: 2px solid black;
+}
+.c3 h3{
+    margin: auto;
+    width: 500px;
+}
+.c3 img{
+    width: 50px;
+    display: inline-block;
+    margin: auto;
+}
+.c4{
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.c4div{
+    background-color: rgb(184, 149, 216);
+    border: 2px solid black;
+    margin: 10px;
+    padding: 3px;
+    width: 100px;
+    height: 200px;
+}
+#c4d6{
+    align-self: flex-end;
+
+}
+.c5{
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 20px;
+}
+li:nth-child(3){
+    color: red;
+}
+li:nth-child(2n+0){
+    color: blue;
+}
+:root{
+
+    --mycol: black;
+}
+.section{
+    margin-top: 20px;
+    padding: 20px;
+    --mycol: black;
+    /* variable mycol defined as black and scope of variable is within section for global variable just write :root{ */
+    border: 2px solid var(--mycol);
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px grey;
+}
+.section::before{
+    content: "Before Pseudo Selector";
+}
+.section::after{
+    content: "after Pseudo Selector";
+}
+.c6{
+    background-color: greenyellow;
+    margin: 20px 0px;
+    height: 800px;
+    border: 2px solid black;
+}
+.c6div{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: relative;
+    animation: ani1 2s ease-in infinite forwards ;
+    /* animation-fill-mode: forwards; */
+}
+@keyframes ani1 {
+    0%{
+        width: 200px;
+        top: 0px;
+    }
+    50%{
+        width: 100%;
+        top: 300px;
+    }
+    100%{
+        width: 200px;
+        top: 600px;
+    }
+}
+.c7{
+    height: 300px;
+    background-color: peachpuff;
+    border: 2px solid black;
+}
+.c7div{
+    background-color: red;
+    color: red;
+    height: 300px;
+    width: 300px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    font-size: 25px;
+}
+.c7div:hover{
+    background-color: black;
+    width: 500px;
+    color: white;
+}
+.c8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 111, 10);
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 600px;
+}
+.c8div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: brown;  
+    border: 2px solid Oblack;
+    border-radius: 8px;
+    height: 400px;
+    width: 400px;
+    transition: all 1s ease-in-out;
+}
+.c8div:hover{
+    /* transform: rotate(360deg); */
+    transform: rotate(360deg) scale(1.5) translate(100px,-100px);
+}
+.c9{
+    display: grid;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+    grid-template-columns: repeat(5,1fr) ;
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+    /* column-gap: 2rem; */
+}
+.c9div{
+    /* height: 100px;
+    width: 100px; */
+    border: 2px solid black;
+    background-color: red;
+    padding: 15px 5px; 
+}
+.c9div:first-child{
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.c10{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+}
+.c10div{
+    background-color: greenyellow;
+    border: 2px solid black;
+    padding: 20px;
+}
+.c11{
+    display: grid;
+    gap: 1rem;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 15px; 
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+}
+.c11div{
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    padding: 20px;
+}
+nav{
+    grid-area: navbar;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+.c12{
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+}
+.bdr{
+    border-style: 2px solid black;
+    padding: 20px;
+    background-color: wheat;
+}
+@media only screen and (max-width:300px){ 
+    body{ 
+        background-color: cyan;
+    }
+    .c12{
+        grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer';
+    }
+}
+@media only screen and (min-width: 300px) and (max-width:500px) {
+    body{
+        background-color: blueviolet;
+    }
+    .c12{
+        grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer';
+    }
+}
+@media (min-width: 500px) and (max-width:800px) {
+    body{
+        background-color: yellow;
+    }
+    .c12{
+        grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer';
+    }
+}
+@media (min-width:800px){
+    .c12{
+        background-color: green;
+    }
+}
